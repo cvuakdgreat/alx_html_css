@@ -1,27 +1,38 @@
 body {
     display: flex;
     flex-direction: column;
+    background: linear-gradient(120deg, rgb(240, 215, 215),rgb(158, 158, 238));
+    
 }
 
 main {
     display: flex;
     flex-direction: row;
     flex: auto;
+    gap: 10px;
 }
 
 article {
     background-color: rgba(248, 246, 248, 0.9);
+    border: 2px solid rgb(187, 186, 186);
+    border-radius: 3%;
     flex: 2;
     overflow-y: auto
     
 }
 
 article img {
-    width: 700px;
+    width: 400px;
 }
 
 aside {
     flex: 1;
-    overflow-y: auto
+    overflow-y: auto;
+    border-radius: 3%;
+}
+
+table, th, td {
+    border: 0.5px solid grey;
+    border-collapse: collapse;
 }
 
