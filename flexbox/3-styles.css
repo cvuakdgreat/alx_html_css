@@ -381,12 +381,12 @@
 
   /* Section Latest news ============================= */
   
-  section.section-latest-news .row{
+  .section-latest-news .row{
     flex-direction: row-reverse;
   }
   
   /* Section SERVICES ============================= */
-  section.section-services .row{
+  .section-services .row{
     flex-wrap: wrap;
   }
 
