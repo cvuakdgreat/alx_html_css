@@ -32,6 +32,7 @@
 
   --font-weight-title: 300;
   --font-weight-regular: 400;
+  --font-weight-semibold: 600;
   --font-weight-bold: 700;
 
   --line-height-small: 1.2;
@@ -44,7 +45,7 @@
    --section-title-padding: 0 0 3rem;
    --section-header-align: center;
    --section-tagline-margin: 0;
-   --section-body-padding: 8rem 0 4rem;
+   --section-body-padding: 4rem 0 4rem;
    --section-footer-padding: 3rem 0 0;
    --section-footer-align: center;
 
@@ -203,6 +204,21 @@ a {
 .section {
    padding: var(--section-padding);
 }
+
+.section-title {
+   padding: var(--section-title-padding);
+   font-weight: var(--font-weight-title);
+   font-size: 32px;
+}
+
+.section-header {
+   text-align: var(--section-header-align);
+   padding: var(--section-header-padding);
+}
+
+.section-body {
+  padding: var(--section-body-padding);
+}
       
 /* Section theming
       ============================= */
@@ -267,7 +283,7 @@ a {
 /* TESTIMONIALS =================== */
 
 .testimonial-section {
-  
+  padding: 10rem 0;
 }
 
 .testimonial-body {
@@ -275,8 +291,162 @@ a {
    justify-content: space-evenly;
    margin-right: auto;
    margin-left: auto;
+   font-size: 22px;
+   padding: 0 15rem;
 }
 
-.aa {
-   margin-right: 30px;
+.testimonial-body p {
+   font-size: 22px;
+   font-weight: var(--font-weight-regular);
+   
 }
+
+.testimonial-body h4 {
+   font-weight: var(--font-weight-bold);
+   margin:0 0 -20px 0;
+}
+
+.testimonial-image {
+   margin: 0 30px 0 0 ;
+   padding: 10px 0 0 0;
+}
+
+/* TUTORIALS SECTIONS  ================= */
+
+.tutorial-section {
+   color: var(--color-darkblue);
+}
+
+
+.tutorial-play {
+   position: absolute; /* Position the overlay image relative to its container */
+   top: 50px; /* Adjust the top position to move the overlay image vertically */
+   left: 100px; /* Adjust the left position to move the overlay image horizontally */
+   width: 64px; /* Set the width of the overlay image */
+   height: 64px; 
+}
+
+.small-tagline {
+   font-size: 14px;
+   line-height: 24px;
+   color: var(--color-darkbluegradient);
+}
+.tutorial-header {
+   font-weight: var(--font-weight-bold);
+   font-size: 16px;
+   color: var(--color-darkblue);
+   margin-top: 20px;
+   margin-bottom: 0;
+}
+.tutorial-title {
+   color: var(--color-darkblue);
+}
+.box {
+   width: 255px;
+   margin: 0 30px 0 20px;
+   position: relative;
+}
+
+.resized-image {
+   width: 30px;
+   height: 30px;
+   margin-right: 10px;
+}
+
+.tutor-col {
+   display: flex;
+   align-items: center;
+}
+.rating-col {
+   display: flex;
+   justify-content: space-between;
+   
+
+}
+.rating-col img {
+   align-self: center;
+   top: 50%;
+   height: 15px;
+
+}
+.pink-text {
+   color: var(--color-purple);
+   font-size: 14px;
+   font-weight: 600;
+   margin-right: 15px;
+}
+
+
+/* MEMBERSHIP =========== */
+.membership-box {
+   width: 255px;
+   text-align: center   ;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.membership-box h4 {
+   font-size: 18px;
+   line-height: 26px;
+   font-weight: var(--font-weight-semibold);
+}
+
+.membership-box p {
+   font-size: 14px;
+   line-height: 26px;
+   font-weight: var(--font-weight-regular);
+   padding: 0 2rem;
+}
+
+.btn-align {
+   text-align: center;
+   padding: 8rem 0 0 0 ;
+}
+
+/* FAQ SECTION =========== */
+
+.section-faq {
+   color: var(--color-darkblue);
+}
+
+.faq-title {
+   font-size: 60px;
+   font-weight: var(--font-weight-title);
+}
+.faq-col {
+   width: 350px;
+   margin-left: 100px;
+   margin-right: 100px;
+}
+
+/* FOOTER ================ */
+.footer {
+   padding: var(--footer-padding);
+ }
+ 
+ .footer-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+    padding-top: 10px;
+ }
+ .footer-nav {
+   display: flex;
+     margin: 0;
+     padding: 0;
+     list-style: none;
+     text-align: center;
+ }
+ 
+ .footer-nav-link {
+   display: block;
+    padding: 0.5rem 0;
+    position: relative;
+    margin-left: 20px;
+ }
+ 
+ .copyright {
+   text-align: center;
+   color: rgba(255, 255, 255, 0.5);
+ }
+ 
