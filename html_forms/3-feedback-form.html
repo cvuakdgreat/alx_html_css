@@ -6,18 +6,23 @@
 	<title>Feedback Form</title>
 </head>
 <body>
+	<!-- feedback form  -->
 	<form>
 
 		<fieldset>
+			<!-- form title  -->
 			<legend> Feedback Form</legend>
+			<!-- name  -->
 			<p>
 				<label for="Name">Name:</label>
 				<input type="text" name="name" id="Name" required>
 			</p>
+			<!-- email  -->
 			<p>
 				<label for="Email"> Email Address:</label>
 				<input type="email" name="email" id="Email" required>
 			</p>
+			<!-- list to group checkbox  -->
 			<ul>
 				<li>
 					<label for="excellent_1"> excellent</label>
@@ -36,11 +41,16 @@
 					<input type="checkbox" id="poor_1" name="poor" value="P" >
 				  </li>
 			</ul>
+			<!-- file upload  -->
 			<p>
 			<label for="file_1">select file</label>
 			<input type="file" id="file_1" >				
 			</p>
-
+		  <!-- submit button  -->
+		  <p>
+			<button type="submit"> Submit</button>
+		  </p>
+		  
 		</fieldset>
 	</form>
 </body>
