@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Subscription Form with Radio Buttons</title>
+</head>
+<body>
+	<form>
+		<p>
+			<label for="Name">Name:</label>
+			<input type="text" name="name" id="Name" required>
+		</p>
+		<p>
+			<label for="Email"> Email Address:</label>
+			<input type="email" name="email" id="Email" required>
+		</p>
+		<fieldset>
+			<legend>Subscription</legend>
+			<ul>
+				<li>
+					<label for="gld"> 
+						Gold 
+						<input type="radio" id="gld" name="sub" value="K" checked>
+					</label>
+
+				</li>
+				<li>
+					<label for="slv">
+						Silver 
+						<input type="radio" id="slv" name="sub" value="S">			
+					</label>
+				</li>
+				<li>
+					<label for="brz">
+						 Bronze
+						<input type="radio" id="brz" name="sub" value="B">
+					</label>
+				</li>
+			</ul>
+		</fieldset>
+		<input type="submit" value="Submit">
+			
+	</form>
+</body>
+</html>
